@@ -37,3 +37,6 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Scratch text extracted from the CV (not used by the site)
+resume_extracted.txt
