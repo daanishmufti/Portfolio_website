@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+:root {
+  --bg-main: #030a06;
+  --bg-deep: #07130c;
+  --bg-elev: #0a1f12;
+  --text-main: #ecfff3;
+  --text-soft: #b8e8c8;
+  --text-faint: #78b791;
+  --display: 'Sora', 'Avenir Next', 'Trebuchet MS', sans-serif;
+  --body: 'Manrope', 'Segoe UI', sans-serif;
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --nav-offset: 112px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-offset);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: clip;
+  color: var(--text-main);
+  font-family: var(--body);
+  line-height: 1.55;
+  background:
+    radial-gradient(circle at 50% 14%, rgba(86, 255, 160, 0.11), transparent 34%),
+    radial-gradient(circle at 12% -10%, rgba(35, 220, 123, 0.32), transparent 32%),
+    radial-gradient(circle at 88% 110%, rgba(152, 255, 186, 0.2), transparent 35%),
+    linear-gradient(rgba(96, 255, 159, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(96, 255, 159, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, var(--bg-main), var(--bg-elev) 40%, var(--bg-deep));
+  background-size: auto, auto, auto, 56px 56px, 56px 56px, auto;
+}
+
+a {
+  color: inherit;
+}
